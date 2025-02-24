@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-nav {
+  background-color: #093c9a;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.App-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.App-nav li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.App-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font: 1.6em Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+.App-nav a:hover {
+  color: #6b0cfa;
+}
+
+.tooltip {
+  visibility: visible;
+  opacity: 1;
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%; /* Position the tooltip below the text */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, max-height 0.3s;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.App-nav li:hover .tooltip {
+  max-height: 200px; /* Adjust based on content */
+}
+
+.tooltip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip li {
+  margin: 10px 0;
+  display: block;
+}
+
+.tooltip a {
+  color: #f2f2f4;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.tooltip a:hover {
+  text-decoration: underline;
+}
+
+.App-header {
+  background-color: rgba(0, 18, 37, 0.98);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1em;
+  color: white;
+  background-color: #033b4a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 1.2em;
+  color: #333333;
+}
+
+p.upload-status {
+  margin-top: 20px;
+  font-weight: bold;
+}
